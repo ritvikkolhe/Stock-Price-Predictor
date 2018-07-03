@@ -9,7 +9,7 @@ from sklearn.linear_model import LinearRegression
 
 print("\nProcessing... Please wait\n")
 
-df = quandl.get("WIKI/GOOGL",authtoken='1cQx6K5aLgz638yxwqoz')           #Google stock dataset from Quandl
+df = quandl.get("WIKI/GOOGL")           #Google stock dataset from Quandl
 
 df = df.iloc[-500: ,-5: ]               #Slicing the required data
 
